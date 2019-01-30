@@ -1,0 +1,5 @@
+INC=/USR/local/ssl/include/
+LIB=/usr/local/ssl/lib/
+
+all:
+	gcc -std=c99 -I$(INC) -L$(LIB) -o findkey findkey.c -lcrypto -ldl
